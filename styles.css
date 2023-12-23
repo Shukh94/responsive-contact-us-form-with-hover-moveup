@@ -1,0 +1,129 @@
+/* Basic CSS styles for the contact form */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    rgba(128, 237, 243, 1) 0%,
+    rgba(100, 145, 238, 1) 50%,
+    rgba(172, 0, 243, 1) 100%
+  );
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 60px 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(
+      90deg,
+      rgba(172, 0, 243, 1) 0%,
+      rgba(128, 237, 243, 1) 30%,
+      rgba(100, 145, 238, 1) 64%,
+      rgba(172, 0, 243, 1) 100%
+    )
+    text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* background: linear-gradient(90deg, rgba(128,237,243,1) 0%, rgba(100,145,238,1) 50%, rgba(172,0,243,1) 100%); */
+
+.contact-form {
+  margin-top: 50px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.name-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-webite-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 0%;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  height: 55%;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  height: 55%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+input:focus + label,
+input:valid + label {
+  color: #72bff0;
+  font-size: 13px;
+  top: -25px;
+  pointer-events: none;
+}
+
+input:focus,
+input:valid {
+  border-bottom: 2px solid #6c6363;
+}
+
+textarea:focus + label,
+textarea:valid + label {
+  color: #72bff0;
+  font-size: 13px;
+  top: -25px;
+  pointer-events: none;
+}
+
+textarea:focus,
+textarea:valid {
+  border-bottom: 2px solid #6c6363;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
